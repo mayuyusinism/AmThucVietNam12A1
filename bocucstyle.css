@@ -1,0 +1,159 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f2;
+    line-height: 1.8;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+header {
+    background:
+        linear-gradient(rgba(211, 84, 0, 0.7), rgba(230, 126, 34, 0.7)),
+        url(header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header h1 {
+    font-size: 55px;
+    letter-spacing: 2px;
+}
+
+nav {
+    background-color: #f39c12;
+    text-align: center;
+    padding: 18px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 30px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: rgb(127, 58, 6);
+}
+
+.container {
+    width: 85%;
+    margin: 60px auto;
+    animation: fadeIn 0.8s ease;
+}
+
+.card {
+    border: 3px solid #e67e22;
+    padding: 35px;
+    margin: 60px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    text-align: justify;
+}
+
+.card h2 {
+    font-size: 32px;
+}
+
+.card h3 {
+    font-size: 26px;
+}
+
+.card p,
+.card li,
+.food-text p {
+    font-size: 22px;
+}
+
+.card ul li {
+    font-size: 22px;
+}
+
+.card h2,
+.card h3,
+.card p,
+.card li {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: textUp 0.8s ease forwards;
+}
+
+.card h2 { animation-delay: 0.2s; }
+.card h3 { animation-delay: 0.3s; }
+.card p  { animation-delay: 0.4s; }
+
+@keyframes textUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.food-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.food-images {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.food-images img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border: 4px solid #d35400;
+    border-radius: 14px;
+    transition: transform 0.8s ease;
+    animation: fadeIn 0.8s ease;
+}
+
+.food-images img:hover {
+    transform: scale(1.08);
+}
+
+.food-text {
+    flex: 1;
+}
+
+.source {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 8px;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #d35400;
+    color: white;
+    margin-top: 70px;
+}
+
+footer p {
+    margin: 8px 0;
+    font-size: 18px;
+}
