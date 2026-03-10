@@ -80,7 +80,8 @@ nav a:hover {
 
 .card h2,
 .card h3,
-.card p {
+.card p,
+.food-text {
     opacity: 0;
     transform: translateY(25px);
     animation: textUp 0.8s ease forwards;
@@ -88,7 +89,8 @@ nav a:hover {
 
 .card h2 { animation-delay: 0.2s; }
 .card h3 { animation-delay: 0.3s; }
-.card p  { animation-delay: 0.4s; }
+.card p,
+.food-text  { animation-delay: 0.4s; }
 
 @keyframes textUp {
     to {
