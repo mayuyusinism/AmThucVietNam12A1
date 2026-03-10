@@ -74,19 +74,13 @@ nav a:hover {
 }
 
 .card p,
-.card li,
 .food-text p {
-    font-size: 22px;
-}
-
-.card ul li {
     font-size: 22px;
 }
 
 .card h2,
 .card h3,
-.card p,
-.card li {
+.card p {
     opacity: 0;
     transform: translateY(25px);
     animation: textUp 0.8s ease forwards;
